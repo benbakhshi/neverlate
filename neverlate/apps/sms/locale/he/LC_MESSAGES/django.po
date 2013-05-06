@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-04-29 12:27+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: models.py:12
+msgid "Category Name"
+msgstr "קטגוריה"
+
+#: models.py:22 templates/problemsite/home.html:8
+#: templates/problemsite/report_detail.html:6
+#: templates/problemsite/report_list.html:9
+msgid "Site Name"
+msgstr "שם האתר"
+
+#: models.py:23 templates/problemsite/home.html:9
+#: templates/problemsite/report_detail.html:7
+#: templates/problemsite/report_list.html:11
+msgid "Site URL"
+msgstr "לינק לאתר"
+
+#: models.py:24 templates/problemsite/home.html:10
+#: templates/problemsite/report_detail.html:8
+#: templates/problemsite/report_list.html:12
+msgid "Problem Description"
+msgstr "תיאור התקלה"
+
+#: templates/_navbar.html:9 templates/base.html:7
+msgid "Site Problems"
+msgstr "שם האתר"
+
+#: templates/_navbar.html:11
+msgid "most popular"
+msgstr "הכי פופולריים"
+
+#: templates/_navbar.html:14
+msgid "recent"
+msgstr "תקלות אחרונות"
+
+#: templates/_navbar.html:18
+msgid "thumbs up"
+msgstr "ציון לשבח"
+
+#: templates/_navbar.html:26
+msgid "Add a new bug"
+msgstr "הוספת תקלה"
+
+#: templates/_navbar.html:30
+msgid "contact us"
+msgstr "צור קשר"
+
+#: templates/problemsite/home.html:12
+#: templates/problemsite/report_detail.html:11
+#: templates/problemsite/report_list.html:14
+msgid "Category"
+msgstr "קטגוריה"

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+{% for object in object_list %}
+<div class="well">
+	<p>list</p>
+{% trans "Site Name" %}: {{object.site_name}}</br>
+{% trans "Site URL" %}: {{object.site_url}}</br>
+{% trans "Problem Description" %}: {{object.problem_description}}
+{% for cat in object.category.all %}</br>
+{% trans "Category" %}: {{ cat.name }}</br>
+{% endfor %}
+</div>
+{% endfor %}
+{% endblock %}
+
+
+
+{% block content %}
+<p>popular</p>
+{% endblock %}

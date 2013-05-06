@@ -1,0 +1,42 @@
+{% load i18n %}
+
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="container" style="width: auto;">
+			<a class="btn btn-navbar" data-toggle="collapse"data-target=".nav-collapse"> <span class= "icon-bar"></span> <span class= "icon-bar"></span> <span class= "icon-bar"></span> </a>
+			<div class="nav-collapse">
+				<ul class="nav">
+			<li ><a class="brand" href="/">{% trans "Site Problems" %}</a></li>
+					<li>
+						<a href="/zzzzzzzzzzzzz/">{% trans "most popular" %}</a>
+					</li>
+					<li>
+						<a href="/report-list/">{% trans "recent" %}</a>
+					
+					</li>
+					<li>
+						<a href="/zzzzzzzzzzzzz/">{% trans "thumbs up" %}</a>
+					
+					</li>
+				
+					
+				</ul>
+				<ul class="nav pull-right">
+					<li>
+						<a href="/create-report/">{% trans "Add a new bug" %}</a>
+					
+					</li>
+					<li>
+						<a href="/zzzzzzzzzzzzz/">{% trans "contact us" %}</a>
+					
+					</li>
+					<li>
+						<span class="navbar-text">{{request.session.email}}</span>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+</div>

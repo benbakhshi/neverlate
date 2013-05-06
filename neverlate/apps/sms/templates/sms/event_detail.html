@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+<div class="well">
+{% trans "Name" %}:{{object.name}}</br>
+{% trans "phone" %}: {{object.phone}}</br>
+{% trans "event_datetime" %}: {{object.event_datetime}}</br>
+{% trans "reminder_datetime" %}: {{object.reminder_datetime}}</br>
+{% trans "message" %}: {{object.message}}</br>
+
+
+{% endfor %}
+</div>
+{% endblock %}
+
