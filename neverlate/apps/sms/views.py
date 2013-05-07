@@ -7,7 +7,7 @@ from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView
 from django.views.generic.list import ListView
 from pprint import pprint, pformat
-from neverlate.apps.sms.models import Event
+from models import Event
 from urllib import urlencode
 
 
