@@ -7,11 +7,11 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-                       # url(r'^$', 'reminders.views.home', name='home'),
+                       url(r'^$', HomeView.as_view(), name='home'),
                        # url(r'^reminders/', include('reminders.foo.urls')),
                        url(r'^event/(?P<pk>\d+)/$', EventDetailView.as_view(), name='event'),
                        url(r'^create-event/$', CreateEventView.as_view(), name='createevent'),
-
+                        url(r'^(?P<calendar_id>\d+/$'), CalendarListView.as_view(), name='calendar'),
                        # Uncomment the admin/doc line below to enable admin documentation:
                        url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
