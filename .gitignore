@@ -2,3 +2,8 @@
 *.pyc
 .idea/
 *.db
+/bin
+/lib
+/include
+.project
+.pydevproject
