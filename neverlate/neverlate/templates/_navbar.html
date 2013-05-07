@@ -1,0 +1,42 @@
+{% load i18n %}
+
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="container" style="width: auto;">
+			<a class="btn btn-navbar" data-toggle="collapse"data-target=".nav-collapse"> <span class= "icon-bar"></span> <span class= "icon-bar"></span> <span class= "icon-bar"></span> </a>
+			<div class="nav-collapse">
+				<ul class="nav">
+			<li ><a class="brand" href="/">{% trans "Never Late" %}</a></li>
+					<li>
+						<a href="/create-event/">{% trans "Create a Reminder" %}</a>
+					</li>
+					<li>
+						<a href="/event-list/">{% trans "View Reminders" %}</a>
+
+					</li>
+					<li>
+						<a href="/view-calendar/">{% trans "View Calendar" %}</a>
+					
+					</li>
+				
+					
+				</ul>
+				<ul class="nav pull-right">
+					<li>
+						<a href="/account-settings/">{% trans "Account Settings" %}</a>
+
+					</li>
+					<li>
+						<a href="/zzzzzzzzzzzzz/">{% trans "Contact Us" %}</a>
+					
+					</li>
+					<li>
+						<span class="navbar-text">{{request.session.email}}</span>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+</div>

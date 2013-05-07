@@ -1,0 +1,46 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="{{LANGUAGE_CODE}}" class="lang-{{LANGUAGE_CODE}}">
+	<head>
+		<meta charset="utf-8">
+		<title>{% trans "Site Problems" %}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="Jenia Skorski">
+			
+		
+		<link href="{% get_static_prefix %}bootstrap/css/bootstrap{% if LANGUAGE_CODE == 'he' %}-rtl{% endif %}.css" rel="stylesheet">
+		<link href="{% get_static_prefix %}/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="/static/style.css" rel="stylesheet">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icojenian-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+		<link rel="shortcut icon" href="../assets/ico/favicon.png">
+		<link href="/static/jquery-ui-1.10.1.custom/css/smoothness/jquery-ui-1.10.1.custom.min.css" rel="stylesheet">
+		
+		
+	</head>
+	<body>
+		<div class="container">
+			
+			{% include '_navbar.html' %}
+
+			
+			
+			{% block content %}
+			{% endblock %}
+		</div>
+        
+		
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="/static/bootstrap/js/bootstrap-alert.js"></script>
+		<script src="/static/bootstrap/js/bootstrap-modal.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+		<script src="/static/javascript.js"></script>
+		<script src="/static/active.js"></script>
+		
+	
+	</body>
+</html>
